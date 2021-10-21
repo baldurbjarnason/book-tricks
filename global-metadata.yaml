@@ -1,0 +1,9 @@
+---
+author: Fantastic Author
+language: en-US
+# Pandoc supports adding a cover image to the epub/mobi.
+# Uncomment the following line and change it to the correct file (based on repo root as CWD)
+# cover-image: ./html/the-greatest-css-tricks-vol-i_files/Book-Cover-1.png
+# More information on the metadata file format here https://pandoc.org/MANUAL.html#epub-metadata
+---
+

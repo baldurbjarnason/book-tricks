@@ -1,0 +1,84 @@
+/* Very minimal EPUB Styles */
+
+html,
+body {
+  font-family: Athelas, Constantia, Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Most ebook reading systems have overrides in place to prevent publishers from messing around too much with the font settings for the main text. This is a direct consequence of publishers having spent years just dumping Adobe Indesign's epub output directly without any modification leading to garbage markup that was often absolutely unreadable. */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  color: #333;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 8em;
+  page-break-before: always;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre-wrap;
+  /* We don't want to break code examples apart. */
+  page-break-inside: avoid;
+  background: #222;
+  color: white;
+  padding: 24px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+pre,
+code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+p code,
+li code {
+  font-size: 88%;
+}
+
+figure,
+p,
+pre,
+blockquote,
+ul,
+ol,
+dl {
+  margin: 0 0 1.5rem 0;
+}
+
+figcaption {
+  font-size: 80%;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  opacity: 0.8;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+blockquote {
+  padding-left: 2rem;
+  font-style: italic;
+  font-size: 110%;
+}
